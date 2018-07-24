@@ -4,6 +4,8 @@
         <div>
             <pre>{{ state }}</pre>
         </div>
+        <hr />
+        <button type="button" @click="$auth.logout()">Logout</button>
     </div>
 </template>
 

@@ -34,4 +34,20 @@ module.exports = {
     },
   },
   modules: ['@nuxtjs/axios', '@nuxtjs/auth'],
+  auth: {
+    redirect: {
+      callback: '/profile',
+    },
+    strategies: {
+      google: {
+        client_id: '720434796508-l0mra6p6e8n2p8ikphraho9vn11jsn99.apps.googleusercontent.com',
+      },
+      facebook: {
+        client_id: '1291731460907199',
+        userinfo_endpoint:
+          'https://graph.facebook.com/v2.12/me?fields=about,name,picture{url},email,birthday',
+        scope: ['public_profile', 'email', 'user_birthday'],
+      },
+    },
+  },
 }
