@@ -1,23 +1,24 @@
 <template>
 	<div>
 		<header>
-		<ul>
-			<li>
-				<nuxt-link to="/" exact>Home</nuxt-link>
-			</li>
-			<li>
-				<nuxt-link to="/login">Login</nuxt-link>
-			</li>
-			<li>
-				<nuxt-link to="/profile">Profile</nuxt-link>
-			</li>
-		</ul>
+			<Navbar />
 		</header>
 		<main>
 			<nuxt/>
 		</main>
 	</div>
 </template>
+
+<script>
+import Navbar from '~/components/Navbar.vue'
+
+export default {
+	components: {
+		Navbar,
+	},
+}
+</script>
+
 
 <style>
 html {
