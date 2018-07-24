@@ -49,7 +49,7 @@ module.exports = {
   modules: ['@nuxtjs/axios', '@nuxtjs/auth'],
   auth: {
     redirect: {
-      callback: '/profile',
+      callback: '/callback',
     },
     strategies: {
       google: {
